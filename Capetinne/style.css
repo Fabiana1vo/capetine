@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap');
+
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0; 
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+ body
+ {
+  width: 100%;
+  min-width: 368px;
+ 
+ }
+#btn-mobile
+{
+  display: none;
+
+}
+
+nav
+{
+    background-color:#d1a8a8;
+    text-align:center;
+    border-radius: 0px 0px 10px 10px ;
+    height: 10vh;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+nav ul {
+    
+    list-style:none;
+    display: flex;
+   }
+  
+ 
+  nav ul li a 
+  {
+    text-decoration: none;
+    color:white;
+    flex-wrap: wrap;
+    display: block;
+    padding:10px;
+
+  }
+
+  ul li a:hover
+  {
+    color:aliceblue;
+    
+  } 
+
+  
+ 
+  
+ h1
+ {
+  display: block;
+  text-align: center;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight:bolder;
+  color:#000000;
+  
+
+}
+
+h2{
+  display: block;
+  text-align: center;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight:bolder;
+  margin-bottom: 10px;
+  font-size: 24px;
+
+}
+  
+u
+{
+  color: #CEA5A5;
+}
+.cards
+{
+
+  margin-top:-5vh;
+  padding:60px; 
+  display: flex;
+  margin-left: 20px;
+}
+
+.card{
+  margin-left: 25px;
+}
+
+.card img:hover
+{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor:pointer;
+}
+ 
+mark
+{
+background-color: #CEA5A5; 
+color:#fff; 
+border-radius: 10px;
+}
+
+.sobre
+{
+   display: flex;
+
+}
+
+
+.slide-left
+{
+  height: 20vh;
+  width: 100%;
+  text-align: center;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+ 
+
+.form
+{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+
+}
+
+.form-group
+
+{
+  margin-bottom: 30px;
+  width: 100%
+}
+
+#contato
+{
+  margin-bottom: 100px;
+}
+footer{
+  color:black;
+  background-color: #CEA5A5;
+  height: 15vh;
+  text-align: center;
+  padding: 15px;
+}
+
+
+@media screen  and (max-width:720px ){
+  
+  .cards{
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0;
+  }
+  .card{
+    margin-bottom: 30px;
+    
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {  
+
+ 
+  #menu
+  {
+    display: block;
+    margin-top: 5px;
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    right: 0;
+    background: #CEA5A5;
+     transition: .6s;
+    z-index: 10000;
+    visibility: hidden;
+    height: 0px;
+    overflow-y: auto;
+
+  }
+  
+  #nav.active #menu
+  {
+    display: block;
+    height: calc(100vh - 70px);
+    visibility: visible;
+
+
+  }
+
+  #menu a 
+  {
+  
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: .5px solid rgba(0, 0, 0, .5);
+    text-align: start;
+   }
+
+
+   #btn-mobile
+   {
+     display: flex;
+     padding: .5rem 1rem;
+     font-size: 1rem;
+     border: none;
+     background:none;
+     cursor: pointer;
+     justify-content: end;
+    }
+
+   #hamburger
+   {
+    border-top: 2px solid;
+    width: 20px;
+    display: block;
+    margin-left: 290px;
+
+   }
+
+   #hamburger::after,  #hamburger::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: .3s;
+    position: relative;
+
+   }
+   #nav.active #hamburger{
+      border-top-color:transparent;
+
+   }
+
+   #nav.active #hamburger::before{
+    transform: rotate(135deg);
+    transition: .3s;
+   }
+   
+   #nav.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+   }
+
+   .slide-left
+   {
+     height: 20vh;
+     width: 100%;
+     text-align: center;
+     color: black;
+     margin-top: 20px;
+     margin-bottom: 180px;
+     font-weight: 600;
+     font-size: 14px;
+   }
+   
+
+   .form-group
+
+   {
+     width: 100%
+   }
+   
+
+
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+  
+
+  .slide-left
+  {
+    height: 20vh;
+    width: 100%;
+    text-align: center;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 180px;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+
+  .form-group
+
+  {
+ 
+    width: 100%
+  }
+  
+
+ }
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { ... }
+
+/* Large desktop */
+@media (min-width: 1200px) { ... }
