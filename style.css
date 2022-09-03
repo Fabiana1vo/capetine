@@ -120,7 +120,17 @@ border-radius: 10px;
 
 #produtos
 {
-    al
+       align-items: center;
+       justify-content:center;
+}
+
+#outlet
+{ 
+    align-items: center;
+    justify-content:center;
+}
+
+
 .sobre
 {
    display: flex;
