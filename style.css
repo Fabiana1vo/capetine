@@ -7,6 +7,7 @@
     padding:0; 
     box-sizing:border-box;
     font-family:sans-serif;
+    scroll-behavior: smooth;
 }
 
  body
@@ -117,6 +118,9 @@ color:#fff;
 border-radius: 10px;
 }
 
+#produtos
+{
+    al
 .sobre
 {
    display: flex;
