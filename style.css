@@ -97,7 +97,8 @@ u
   margin-top:-5vh;
   padding:60px; 
   display: flex;
-  margin-left: 20px;
+  justify-content:center;
+  align-items: center;
 }
 
 .card{
