@@ -236,6 +236,7 @@ footer{
     width: 20px;
     display: block;
     margin-left: 290px;
+    color:#5AF7E7;
 
    }
 
@@ -269,7 +270,7 @@ footer{
    {
      height: 20vh;
      width: 100%;
-     text-align: center;
+     text-align: start;
      color: black;
      margin-top: 20px;
      margin-bottom: 180px;
