@@ -7,10 +7,20 @@
     padding:0; 
     box-sizing:border-box;
     font-family:sans-serif;
-    scroll-behavior: smooth;
-    transition-duration: 1s;
 }
 
+    
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+ 
+:target {
+  scroll-margin-top: .8em;
+}
+
+}
  body
  {
   width: 100%;
